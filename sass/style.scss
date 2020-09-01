@@ -1,24 +1,34 @@
 /* General */ 
+*, *::before, *::after {
+    box-sizing: border-box;
+}
 
-// div { border: 1px solid red;}
+$color-brand: hsl(51, 100%, 50%);
+$color-intro: white;
+$color-title-text: black;
+$color-description: grey;
+
+// * {border: 1px solid red;}
 
 /* Navigation */
 
 .row {
     justify-content: space-between;
     padding: 20px;
-    h1 {
-        color: gold;
+    
+    .brand-name {
+        color: $color-brand;
+        font-size: 30px;
     }
     .navigation-items {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    
-        li {
-            display: inline-block;
-            color: white;
-        }
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        
+            li {
+                display: inline-block;
+                color: $color-intro;
+            }
 }
 }
 
@@ -26,6 +36,39 @@
 
 .splash {
     background-image: url(/images/pexels-ingo-joseph-631411.jpg);
+    background-color: rgb(39, 34, 34);
     background-size: cover;
-    height: 100vh;
+    min-height: 800px;
 }
+    
+    
+    .splash-inner {
+        margin: 100px auto;
+        text-align: center;
+
+        .sub-title {
+            color: $color-intro;
+            font-size: 40px;
+            margin: 0;
+            
+        }
+        
+        .page-title {
+            margin: 10px auto;
+            color: $color-intro;
+            font-size: 70px;
+            text-transform: uppercase;
+        }
+
+        button {
+            color: $color-intro;
+            font-size: 25px;
+            width: 340px;
+            height: 80px;
+            background-color: rgb(212, 167, 17);
+            margin: 40px 0 0 0;
+            border-radius: 10px;
+
+        }
+    }
+        
