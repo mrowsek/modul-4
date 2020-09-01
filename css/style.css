@@ -1,0 +1,33 @@
+/* General */
+/* Navigation */
+.row {
+  -ms-flex-pack: justify;
+      justify-content: space-between;
+  padding: 20px;
+}
+
+.row h1 {
+  color: gold;
+}
+
+.row .navigation-items {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -ms-flex-align: center;
+      align-items: center;
+}
+
+.row .navigation-items li {
+  display: inline-block;
+  color: white;
+}
+
+/* Splash */
+.splash {
+  background-image: url(/images/pexels-ingo-joseph-631411.jpg);
+  background-size: cover;
+  height: 100vh;
+}
+/*# sourceMappingURL=style.css.map */

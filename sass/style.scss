@@ -1,0 +1,31 @@
+/* General */ 
+
+// div { border: 1px solid red;}
+
+/* Navigation */
+
+.row {
+    justify-content: space-between;
+    padding: 20px;
+    h1 {
+        color: gold;
+    }
+    .navigation-items {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    
+        li {
+            display: inline-block;
+            color: white;
+        }
+}
+}
+
+/* Splash */
+
+.splash {
+    background-image: url(/images/pexels-ingo-joseph-631411.jpg);
+    background-size: cover;
+    height: 100vh;
+}
