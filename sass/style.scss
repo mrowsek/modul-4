@@ -8,7 +8,7 @@ $color-intro: white;
 $color-title-text: black;
 $color-description: grey;
 
-// * {border: 1px solid red;}
+* {border: 1px solid red;}
 
 /* Navigation */
 
@@ -27,7 +27,11 @@ $color-description: grey;
         
             li {
                 display: inline-block;
-                color: $color-intro;
+                
+                a { 
+                    text-decoration: none;
+                    color: $color-intro;
+                }
             }
 }
 }
@@ -43,21 +47,22 @@ $color-description: grey;
     
     
     .splash-inner {
-        margin: 100px auto;
+        margin: 160px auto;
         text-align: center;
 
         .sub-title {
             color: $color-intro;
             font-size: 40px;
-            margin: 0;
+            margin: 0 0 50px 0;
             
         }
         
         .page-title {
-            margin: 10px auto;
+            margin: 20px auto;
             color: $color-intro;
             font-size: 70px;
             text-transform: uppercase;
+            letter-spacing: 2px;
         }
 
         button {
@@ -70,5 +75,13 @@ $color-description: grey;
             border-radius: 10px;
 
         }
+    }
+
+    /* Services */
+    
+    .section-title {
+        display: inline-block;
+        margin-right: auto;
+        margin-left: auto;
     }
         
